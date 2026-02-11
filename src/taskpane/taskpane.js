@@ -90,6 +90,7 @@ async function checkForDocumentChanges() {
         }
       }
     });
+    console.log("Testing changes")
   } catch (error) {
     console.error("Error checking for document changes:", error);
   }
