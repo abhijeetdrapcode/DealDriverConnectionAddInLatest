@@ -548,7 +548,7 @@ async function sendCategoryData(
     const endpoint =
       category === "postClosing"
         ? "https://dealdriverapi.drapcode.co/addPostClosingData"
-        : "http://localhost:3002/addClosingData";
+        : "https://dealdriverapi.drapcode.co/addClosingData";
 
     const response = await fetch(endpoint, {
       method: "POST",
