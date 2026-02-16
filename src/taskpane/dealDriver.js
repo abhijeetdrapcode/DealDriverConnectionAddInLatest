@@ -282,7 +282,8 @@ async function handleLogin(userName, password) {
         ? "https://app.dealdriver.net/login"
         : selectedEnvironment === "preview"
           ? "https://deal-driver-20245869.api.preview.drapcode.io/api/v1/developer/login"
-          : "https://deal-driver-20245869.api.sandbox.drapcode.io/api/v1/developer/login";
+          : // : "https://deal-driver-20245869.api.sandbox.drapcode.io/api/v1/developer/login";
+            "https://deal-driver-20245869.sandbox.drapcode.io/login";
 
     const response = await fetch(apiUrl, {
       method: "POST",
